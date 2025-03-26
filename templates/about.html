@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% block title %}About | Sanket Ghosh{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='images/about_image.jpeg') }}" alt="About Sanket" class="img-fluid rounded-3 shadow about-img">
+            </div>
+            <div class="col-md-8 about-text">
+                <h3 class="mb-3">Hello, I'm Sanket Ghosh</h3>
+                <p class="lead">A passionate software developer dedicated to crafting digital solutions that make a difference.</p>
+                <p>With a strong foundation in Generative AI and SaaS product development, I create applications that are not only functional but also provide exceptional user experiences. My approach combines technical expertise with creative problem-solving to deliver solutions that exceed client expectations.</p>
+                <p>I believe in writing clean, maintainable code and following best practices to ensure the longevity and scalability of every project I undertake. Continuous learning and staying updated with the latest technologies are core principles that guide my professional journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-journey bg-light">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Journey</h2>
+        </div>
+        <div class="timeline position-relative">
+            <div class="row">
+                <div class="col-md-6 offset-md-6 mb-4">
+                    <div class="timeline-card">
+                        <h5>Education</h5>
+                        <span class="timeline-date">2022 - 2026</span>
+                        <p>Bachelor of Technology in Computer Science from Institute Of Engineering and Management, Kolkata.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="timeline-card">
+                        <h5>IEM IEDC</h5>
+                        <span class="timeline-date">2024 - Present</span>
+                        <p>Research Assistant and Project Intern at IEM IEDC</p>
+                        <p>Conducted servey and research on Finance, Stock Price Prediction, Machine learning - Model Training.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-6 mb-4">
+                    <div class="timeline-card">
+                        <h5>Project Intern at BAIR.AI</h5>
+                        <span class="timeline-date">September 2024 to February 2025</span>
+                        <p>Developed a complete a Cryptocurrency Price Prediction Algorithm and Report generation using Gen AI.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="timeline-card">
+                        <h5>humanizetech.ai</h5>
+                        <span class="timeline-date">January 2025 - Present</span>
+                        <p>Python Developer and Intern of AI Practice at humanizetech.ai. Developing AI SaaS Product in the Gen AI Arena.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="expertise">
+    <div class="container">
+        <div class="section-title">
+            <h2>Technical Expertise</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Languages</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Python</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Java</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> HTML/CSS</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> SQL</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> C#</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi bi-stack"></i>
+                    <h3>Frameworks & Libraries</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Flask and FAST API</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Streamlit and Gradio</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> langchain</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> langraph</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> LLMs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi bi-tools"></i>
+                    <h3>Tools & Platforms</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Git & GitHub</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Docker</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> AWS/Azure</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> MongoDB/PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="interests bg-light">
+    <div class="container">
+        <div class="section-title">
+            <h2>Interests & Hobbies</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h3 class="mb-4">Beyond Coding</h3>
+                        <p>When I'm not immersed in code, I enjoy:</p>
+                        <ul>
+                            <li class="mb-2">Reading technical books and blogs to stay updated with the latest trends in technology</li>
+                            <li class="mb-2">Contributing to open-source projects and giving back to the developer community</li>
+                            <li class="mb-2">Participating in hackathons and coding competitions to challenge myself</li>
+                            <li class="mb-2">Hiking and outdoor photography to reconnect with nature</li>
+                            <li class="mb-2">Playing chess and strategic board games to sharpen my analytical thinking</li>
+                            <li class="mb-2">Writing technical articles and tutorials to share knowledge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/hobbies-placeholder.jpg') }}" alt="Hobbies" class="img-fluid rounded-3 shadow">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="philosophy">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Philosophy</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+                        <h3 class="card-title">Innovation</h3>
+                        <p class="card-text">I believe in thinking outside the box and finding creative solutions to complex problems. Innovation isn't just about using new technologies—it's about using the right technologies in the right way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="bi bi-arrow-repeat fs-1 text-primary mb-3"></i>
+                        <h3 class="card-title">Continuous Learning</h3>
+                        <p class="card-text">The tech landscape evolves rapidly, and I'm committed to growing with it. I dedicate time each week to learning new skills, exploring emerging technologies, and refining my existing knowledge.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="bi bi-people fs-1 text-primary mb-3"></i>
+                        <h3 class="card-title">Collaboration</h3>
+                        <p class="card-text">I firmly believe that the best solutions come from diverse perspectives working together. Effective communication and collaborative problem-solving are essential to creating exceptional software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Let's Work Together</h2>
+        <p class="lead mb-4">Looking for a developer who can bring your ideas to life with precision and creativity?</p>
+        <a href="/contact" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+</section>
+{% endblock %} 

@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+
+{% block title %}Sanket Ghosh | Software Developer{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <img src="{{ url_for('static', filename='images/myphoto.jpeg') }}" alt="Sanket Ghosh" class="profile-img animate__animated animate__fadeIn">
+            <h1 class="animate__animated animate__fadeInUp">Sanket Ghosh</h1>
+            <h2 class="animate__animated animate__fadeInUp delay-1">Software Developer and SaaS Product Developer</h2>
+            <p class="lead mt-4 animate__animated animate__fadeInUp delay-2">I craft elegant, efficient, and user-centric applications that solve real-world problems.</p>
+            <div class="mt-4 animate__animated animate__fadeInUp delay-3">
+                <a href="/contact" class="btn btn-primary btn-lg me-2">Get in Touch</a>
+                <a href="/projects" class="btn btn-outline-light btn-lg">View Projects</a>
+            </div>
+            <div class="social-links mt-4 animate__animated animate__fadeInUp delay-4">
+                <a href="https://github.com/sanketghosh19" target="_blank" class="me-3"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/sanketghosh19" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com/sanketghoshh" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+        <a href="#skills" class="scroll-down text-white">
+            <i class="bi bi-chevron-down fs-3"></i>
+        </a>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>AI Product and SaaS Product Development</h3>
+                    <p>Creating responsive, interactive and visually appealing Gen AI Software Products with modern frameworks and libraries.</p>
+                    <div class="mt-4">
+                        <span class="badge">Python</span>
+                        <span class="badge">Langchain</span>
+                        <span class="badge">Langraph</span>
+                        <span class="badge">RAG and LLMs</span>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi bi-lightbulb"></i>
+                    <h3>Backend Development</h3>
+                    <p>Building robust, scalable server-side applications and APIs that power web and mobile applications.</p>
+                    <div class="mt-4">
+                        <span class="badge">Python</span>
+                        <span class="badge">Flask</span>
+                        <span class="badge">Stramlit</span>
+                        <span class="badge">FAST API</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi bi-server"></i>
+                    <h3>Database & DevOps</h3>
+                    <p>Managing data efficiently with both SQL and NoSQL databases, and implementing modern DevOps practices.</p>
+                    <div class="mt-4">
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Git</span>
+                        <span class="badge">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='images/my_image.jpeg') }}" alt="About Sanket" class="img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">About Me</h2>
+                <p class="lead">A passionate software developer with a knack for creative problem-solving.</p>
+                <p>I specialize in building full-stack web applications that are not only functional but also deliver exceptional user experiences. With a strong foundation in both frontend and backend technologies, I bridge the gap between design and functionality.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.</p>
+                <a href="/about" class="btn btn-primary mt-3">Learn More About Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 project-item" data-category="web,backend">
+                <div class="project-card">
+                    <img src="{{ url_for('static', filename='images/proj1.PNG') }}" class="card-img-top" alt="E-commerce Platform">
+                    <div class="card-body">
+                        <h3 class="card-title">E-commerce Platform</h3>
+                        <p class="card-text">A full-featured online shopping solution with user authentication, product management, cart functionality, and secure payment processing.</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge">Python</span>
+                            <span class="badge">Flask</span>
+                            <span class="badge">Figma</span>
+                            <span class="badge">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                        <a href="https://www.figma.com/design/EFK6Y0gE3iRDGprgDUwYxo/E---Commerce-App?node-id=0-1&p=f&t=soGrCbchhU9DTqrW-0" class="btn btn-sm btn-outline-dark">Figma <i class="bi bi-Figma"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="{{ url_for('static', filename='images/project2-placeholder.jpg') }}" class="card-img-top" alt="Task Management App">
+                    <div class="card-body">
+                        <h3 class="card-title">Task Management App</h3>
+                        <p class="card-text">A collaborative productivity tool for teams with real-time updates and performance analytics.</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge">Python</span>
+                            <span class="badge">Django</span>
+                            <span class="badge">Vue.js</span>
+                            <span class="badge">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-sm btn-outline-primary">View Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline-dark">GitHub <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="{{ url_for('static', filename='images/project3-placeholder.jpg') }}" class="card-img-top" alt="Fitness Tracker App">
+                    <div class="card-body">
+                        <h3 class="card-title">Fitness Tracker App</h3>
+                        <p class="card-text">A mobile application for tracking workouts, setting fitness goals, and monitoring progress over time.</p>
+                        <div class="d-flex flex-wrap mb-3">
+                            <span class="badge">Python</span>
+                            <span class="badge">Flask</span>
+                            <span class="badge">React Native</span>
+                            <span class="badge">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-sm btn-outline-primary">View Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline-dark">GitHub <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="/projects" class="btn btn-primary">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="testimonials bg-light">
+    <div class="container">
+        <div class="section-title">
+            <h2>What People Say</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-quote fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="card-title mb-0">Amit Kumar</h5>
+                                <p class="text-muted mb-0">Project Manager, Tech Solutions</p>
+                            </div>
+                        </div>
+                        <p class="card-text">Sanket delivered our project ahead of schedule and exceeded our expectations. His attention to detail and problem-solving skills are outstanding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-quote fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="card-title mb-0">Priya Singh</h5>
+                                <p class="text-muted mb-0">UI/UX Designer, Creative Labs</p>
+                            </div>
+                        </div>
+                        <p class="card-text">Working with Sanket was a fantastic experience. He has a great eye for design implementation and creates seamless user experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-quote fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="card-title mb-0">Rahul Sharma</h5>
+                                <p class="text-muted mb-0">CTO, StartUp Ventures</p>
+                            </div>
+                        </div>
+                        <p class="card-text">Sanket's technical expertise and ability to quickly understand our business needs made him an invaluable asset to our development team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="cta">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to bring your ideas to life?</h2>
+        <p class="lead mb-4">Let's collaborate and create something amazing together.</p>
+        <a href="/contact" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+</section>
+{% endblock %} 
